@@ -1,8 +1,15 @@
-# CRUD Nodejs and Mysql
-this is a basic application crud that uses nodejs in the backend, mysql as database.
+xxCRUD Basico con Nodejs
+Aplicación basica con nodejs
 
-# Usefull Commands
-- to init mysql: `mysql -u root -p`
+# Importaciones Importantes
+- npm install express mysql express-myconnection morgan ejs
+- npm install dotenv --save
 
-# links
-- [bootstrap 4 theme](https://bootswatch.com/4/lux/bootstrap.min.css)
+# El archivo .env
+Cuenta con las siguientes variables
+- DB_PORT= puerto de la base de datos
+- DB_HOST= nombre del host
+- DB_USER= nombre del usuario de la base de datos
+- DB_PASS= contraseña para acceder a la bd
+- DB_NAME= nombre de la base de datos
+- PORT = puerto de nuestro servidor
