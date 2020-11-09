@@ -10,18 +10,18 @@ require('dotenv').config();
 const customerRoutes = require('./routes/customer');
 
 // settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // middlewares
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  port: process.env.DB_PORT,
-  database: process.env.DB_NAME
+  host: '',
+  user: '',
+  password: '',
+  port: ,
+  database: ''
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
